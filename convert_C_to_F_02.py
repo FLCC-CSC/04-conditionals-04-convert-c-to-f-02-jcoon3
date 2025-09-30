@@ -1,102 +1,32 @@
-# FILE NAME - convert_C_to_F_02.py
+# Name: Justin Coon
+# Date: 09-29-2025
+# Description: A program that converts celcius to fahrenheit and vice versa
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# Prints a banner
+print("===== Temperature Converter =====\n")
 
+# Prints the menu options
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius\n")
 
+# Variable declaration for the menu choice and temperature to be converted
+user_choice = int(input("Please choose from the above menu: "))
 
-# 1. Make sure you fill out the comments above
-# 2. Write your code in the proper spot
-# 3. Be sure to answer the Reflection Questions and Attestation below
-# 4. The Sample Output has been included in this code for your convenience
-
-
-
-########## ENTER YER CODE BELOW THIS LINE ##########
-
+temperature = float(input("Enter a temperature to convert: "))
 
 
+# Variable declaration for converting Fahrenheit to Celsius and vice versa
+celsius = (temperature - 32 ) * 5/9
+
+fahrenheit = temperature * 9/5 + 32
 
 
-
-
-
-
-
-########### END YER CODE ABOVE THIS LINE ###########
-
+# If statement to check if menu option 1 was selected and prints degrees Celsius to degrees Fahrenheit
+if user_choice == 1:
     
+    print(f"\n{temperature} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
 
-
-
-########################################
-#          SAMPLE OUTPUT
-########################################
-
-'''
-===== Temperature Converter =====
-
-  1. Convert from Celsius to Fahrenheit
-  2. Convert from Fahrenheit to Celsius
-
-Please choose from the above menu: 1
-Enter a temperature to convert: 100
-
-100.0 degrees Celsius is 212.0 degrees Fahrenheit.
-'''
-
-
-'''
-===== Temperature Converter =====
-
-  1. Convert from Celsius to Fahrenheit
-  2. Convert from Fahrenheit to Celsius
-
-Please choose from the above menu: 2
-Enter a temperature to convert: 32
-
-32.0 degrees Fahrenheit is 0.0 degrees Celsius.
-'''
-
-
-'''
-===== Temperature Converter =====
-
-  1. Convert from Celsius to Fahrenheit
-  2. Convert from Fahrenheit to Celsius
-
-Please choose from the above menu: 1
-Enter a temperature to convert: -40
-
--40.0 degrees Celsius is -40.0 degrees Fahrenheit.
-'''
-
-
-'''
-===== Temperature Converter =====
-
-  1. Convert from Celsius to Fahrenheit
-  2. Convert from Fahrenheit to Celsius
-
-Please choose from the above menu: 2
-Enter a temperature to convert: -40
-
--40.0 degrees Fahrenheit is -40.0 degrees Celsius.
-'''
-
-########################################
-#          REFLECTION QUESTIONS
-########################################
-
-'''
-
-1. What is one lesson you learned in this lab?
-
-
-
-
-
-
-
-'''
+# Elif clause that checks if menu option 2 was chosen and prints degrees Fahrenheit to degrees Celsius    
+elif user_choice == 2:
+    
+   print(f"\n{temperature} degrees Fahrenheit is {celsius} degrees Celsius.")
