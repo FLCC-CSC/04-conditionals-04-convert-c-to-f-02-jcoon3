@@ -24,9 +24,9 @@ fahrenheit = temperature * 9/5 + 32
 # If statement to check if menu option 1 was selected and prints degrees Celsius to degrees Fahrenheit
 if user_choice == 1:
     
-    print(f"\n{temperature} degrees Celsius is {fahrenheit} degrees Fahrenheit")
+    print(f"\n{temperature} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
 
 # Elif clause that checks if menu option 2 was chosen and prints degrees Fahrenheit to degrees Celsius    
 elif user_choice == 2:
     
-   print(f"\n{temperature} degrees Fahrenheit is {celsius} degrees Fahrenheit")
+   print(f"\n{temperature} degrees Fahrenheit is {celsius} degrees Celsius.")
